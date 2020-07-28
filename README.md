@@ -1,2 +1,2 @@
 # Algorithims
-solutions, algorithms, and puzzles
+Index of functions sorted by language for quick copy & paste use 
