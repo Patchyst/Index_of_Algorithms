@@ -1,0 +1,19 @@
+#!/bin/bash
+# function takes in two arrays $1 is the array without roots $2 is the array with roots
+comp() {
+  for i in $2; do
+    output=true
+    result=$(echo "sqrt($i)" | bc)
+    if [[ "$1[@]" =~ "$result" ]]; then
+      :
+    else
+      output=false 
+    fi
+  done
+    if [[ $output = true ]]; then
+      return 0
+    else
+      return 1
+    fi
+}
+comp "$1" "$2"
