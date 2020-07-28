@@ -1,6 +1,8 @@
 #include <string>
 #include <numeric>
 
+// Create a phone number based off of a string of numbers
+
 using namespace std;
 
 string createPhoneNumber(const int arr [10]){
