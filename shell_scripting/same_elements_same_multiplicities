@@ -1,5 +1,5 @@
 #!/bin/bash
-# function takes in two arrays $1 is the array without roots $2 is the array with roots
+# function takes in two arrays $1 is the array without roots $2 is the array with roots. Returns 0 if False
 compute() {
   for i in $2; do
     output=true
