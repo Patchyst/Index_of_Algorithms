@@ -1,3 +1,4 @@
+// Digital root of a number
 func digitalRoot(of number: Int) -> Int {
   print(number)
   var sum: Int = 0
