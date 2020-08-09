@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-/* Compiled using gcc. This C program outputs the context of a given file */
+/* Compiled using gcc. This C program outputs the contents of a given file */
 
 long int findSize(char filename[]){
         long int fileSize;
