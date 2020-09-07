@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* Greatest common divisor function */
 int greatestCommonDivisor(int numberOne, int numberTwo){
     int remainder = numberOne % numberTwo;
     if(numberOne < 0 || numberTwo < 0){
