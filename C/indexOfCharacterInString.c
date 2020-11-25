@@ -9,6 +9,6 @@ int main(int argc, char *argv[]){
     scanf("%c", &ch);
     char *pChar = NULL;
     pChar = strchr(str, ch);
-    if(pGotChar == NULL){printf("\n[-] No Matches Found For: %c \n", ch);}
+    if(pChar == NULL){printf("\n[-] No Matches Found For: %c \n", ch);}
     else{int pos = strlen(str)-strlen(pChar);printf("The character is at index: %d\n", pos);}
 }
