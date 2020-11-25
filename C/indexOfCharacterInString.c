@@ -7,8 +7,8 @@ int main(int argc, char *argv[]){
     char ch;
     printf("\nEnter a character to match for: ");
     scanf("%c", &ch);
-    char *pGotChar = NULL;
-    pGotChar = strchr(str, ch);
+    char *pChar = NULL;
+    pChar = strchr(str, ch);
     if(pGotChar == NULL){printf("\n[-] No Matches Found For: %c \n", ch);}
-    else{int pos = strlen(str)-strlen(pGotChar);printf("The character is at index: %d\n", pos);}
+    else{int pos = strlen(str)-strlen(pChar);printf("The character is at index: %d\n", pos);}
 }
