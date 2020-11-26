@@ -1,3 +1,14 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <ctype.h>
+bool checkEqual(char charArr[], char charArr2[], bool caseSense);
+int main(int argc, char *argv[]){
+    char hello[] = "Hello"; char world[] = "hello";
+    bool isEqual = checkEqual(hello, world, false);
+    printf(isEqual ? "True" : "False");
+    printf("\n");
+    return 0;
+}
 bool checkEqual(char charArr[], char charArr2[], bool caseSense){
     caseSense = false;
     int lenArray = len(charArr); int lenArray2 = len(charArr2);
