@@ -1,0 +1,18 @@
+# bash script for searching files ($1) on a system with text that matches pattern ($2)
+
+#!/bin/bash
+if [[ -z $2 ]]; then
+		echo "<usage> $0 file pattern"
+elif [[ -n $2 ]]; then
+	OUTPUT=`locate ${1}`
+	for PATH in $OUTPUT; do
+		LINE=$(cat $PATH | grep -n $2)
+		if [[ -n $LINE ]]; then
+			echo "$PATH"
+			echo "$LINE"
+			echo ""
+			echo ""
+		fi
+	done
+
+fi
