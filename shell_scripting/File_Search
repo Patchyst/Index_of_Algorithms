@@ -1,6 +1,5 @@
-# bash script for searching files ($1) on a system with text that matches pattern ($2)
-
 #!/bin/bash
+# bash script for searching files ($1) on a system with text that matches pattern ($2)
 if [[ -z $2 ]]; then
 		echo "<usage> $0 file pattern"
 elif [[ -n $2 ]]; then
